@@ -28,6 +28,19 @@ DOMAINS = (
     "food_nutrition",
     "sdg_health",
     "climate",
+    "population",
+    "health_equity",
+    "africa_dev",
+    "malnutrition",
+    "energy",
+    "net_savings",
+    "doing_business",
+    "cpia",
+    "logistics",
+    "financial_dev",
+    "stat_performance",
+    "id4d",
+    "wealth",
 )
 
 

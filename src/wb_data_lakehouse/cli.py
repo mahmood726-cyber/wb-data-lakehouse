@@ -36,6 +36,19 @@ def command_promote(args) -> dict:
     from wb_data_lakehouse.promote.food_nutrition import promote_food_nutrition
     from wb_data_lakehouse.promote.sdg_health import promote_sdg_health
     from wb_data_lakehouse.promote.climate import promote_climate
+    from wb_data_lakehouse.promote.population import promote_population
+    from wb_data_lakehouse.promote.health_equity import promote_health_equity
+    from wb_data_lakehouse.promote.africa_dev import promote_africa_dev
+    from wb_data_lakehouse.promote.malnutrition import promote_malnutrition
+    from wb_data_lakehouse.promote.energy import promote_energy
+    from wb_data_lakehouse.promote.net_savings import promote_net_savings
+    from wb_data_lakehouse.promote.doing_business import promote_doing_business
+    from wb_data_lakehouse.promote.cpia import promote_cpia
+    from wb_data_lakehouse.promote.logistics import promote_logistics
+    from wb_data_lakehouse.promote.financial_dev import promote_financial_dev
+    from wb_data_lakehouse.promote.stat_performance import promote_stat_performance
+    from wb_data_lakehouse.promote.id4d import promote_id4d
+    from wb_data_lakehouse.promote.wealth import promote_wealth
 
     promoters = {
         "wdi": promote_wdi,
@@ -50,6 +63,19 @@ def command_promote(args) -> dict:
         "food_nutrition": promote_food_nutrition,
         "sdg_health": promote_sdg_health,
         "climate": promote_climate,
+        "population": promote_population,
+        "health_equity": promote_health_equity,
+        "africa_dev": promote_africa_dev,
+        "malnutrition": promote_malnutrition,
+        "energy": promote_energy,
+        "net_savings": promote_net_savings,
+        "doing_business": promote_doing_business,
+        "cpia": promote_cpia,
+        "logistics": promote_logistics,
+        "financial_dev": promote_financial_dev,
+        "stat_performance": promote_stat_performance,
+        "id4d": promote_id4d,
+        "wealth": promote_wealth,
     }
 
     if args.all:

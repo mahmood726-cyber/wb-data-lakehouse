@@ -10,7 +10,7 @@ REGISTRY_PATH = Path(__file__).resolve().parents[1] / "registry" / "sources.yaml
 
 def test_registry_loads():
     registry = load_registry(REGISTRY_PATH)
-    assert len(registry) == 12
+    assert len(registry) == 25
 
 
 def test_registry_validates_clean():
@@ -22,7 +22,10 @@ def test_registry_validates_clean():
 def test_registry_all_domains_present():
     registry = load_registry(REGISTRY_PATH)
     for domain in ("wdi", "hnp", "poverty", "governance", "education", "gender",
-                    "hci", "uhc", "esg", "food_nutrition", "sdg_health", "climate"):
+                    "hci", "uhc", "esg", "food_nutrition", "sdg_health", "climate",
+                    "population", "health_equity", "africa_dev", "malnutrition",
+                    "energy", "net_savings", "doing_business", "cpia", "logistics",
+                    "financial_dev", "stat_performance", "id4d", "wealth"):
         assert domain in registry, f"Missing domain: {domain}"
         assert len(registry[domain].indicators) > 0, f"{domain} has no indicators"
 

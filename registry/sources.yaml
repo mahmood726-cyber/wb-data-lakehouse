@@ -357,3 +357,310 @@ climate:
     - EN.CLC.HEAT.XD           # Heat Index 35
     - EN.CLC.SPEI.XD           # Drought index (SPEI)
     - EN.LND.LTMP.DC           # Land surface temperature
+
+population:
+  description: "Population Estimates and Projections — age-specific mortality, fertility"
+  source_id: 40
+  indicators:
+    - SH.DTH.0509
+    - SH.DTH.1014
+    - SH.DTH.1019
+    - SH.DTH.1519
+    - SH.DTH.2024
+    - SH.DTH.IMRT
+    - SH.DTH.IMRT.FE
+    - SH.DTH.IMRT.MA
+    - SH.DTH.MORT
+    - SH.DTH.MORT.FE
+    - SH.DTH.MORT.MA
+    - SH.DTH.NMRT
+    - SP.DYN.AMRT.FE
+    - SP.DYN.AMRT.MA
+    - SP.DYN.CBRT.IN
+    - SP.DYN.CDRT.IN
+    - SP.DYN.LE00.FE.IN
+    - SP.DYN.LE00.IN
+    - SP.DYN.LE00.MA.IN
+    - SP.DYN.TFRT.IN
+    - SP.POP.0014.TO
+    - SP.POP.0014.TO.ZS
+    - SP.POP.1564.TO
+    - SP.POP.1564.TO.ZS
+    - SP.POP.65UP.TO
+    - SP.POP.65UP.TO.ZS
+    - SP.POP.GROW
+    - SP.POP.TOTL
+    - SP.POP.TOTL.FE.ZS
+    - SP.POP.TOTL.MA.ZS
+
+health_equity:
+  description: "Health Equity and Financial Protection — quintile-disaggregated health indicators"
+  source_id: 65
+  indicators:
+    - HF.DYN.IMRT.IN
+    - HF.DYN.IMRT.IN.Q1
+    - HF.DYN.IMRT.IN.Q2
+    - HF.DYN.IMRT.IN.Q3
+    - HF.DYN.IMRT.IN.Q4
+    - HF.DYN.IMRT.IN.Q5
+    - HF.DYN.MORT
+    - HF.DYN.MORT.Q1
+    - HF.DYN.MORT.Q2
+    - HF.DYN.MORT.Q3
+    - HF.DYN.MORT.Q4
+    - HF.DYN.MORT.Q5
+    - HF.STA.STNT.ZS
+    - HF.STA.STNT.ZS.Q1
+    - HF.STA.STNT.ZS.Q2
+    - HF.STA.STNT.ZS.Q3
+    - HF.STA.STNT.ZS.Q4
+    - HF.STA.STNT.ZS.Q5
+    - HF.STA.BRTC.ZS
+    - HF.STA.BRTC.ZS.Q1
+    - HF.STA.BRTC.ZS.Q2
+    - HF.STA.BRTC.ZS.Q3
+    - HF.STA.BRTC.ZS.Q4
+    - HF.STA.BRTC.ZS.Q5
+    - HF.IMM.MEAS
+    - HF.IMM.MEAS.Q1
+    - HF.IMM.MEAS.Q2
+    - HF.IMM.MEAS.Q3
+    - HF.IMM.MEAS.Q4
+    - HF.IMM.MEAS.Q5
+
+africa_dev:
+  description: "Africa Development Indicators — curated Africa-specific metrics"
+  source_id: 11
+  indicators:
+    - AG.CON.FERT.ZS
+    - AG.LND.AGRI.ZS
+    - AG.LND.ARBL.ZS
+    - AG.LND.FRST.ZS
+    - AG.PRD.FOOD.XD
+    - AG.YLD.CREL.KG
+    - BN.CAB.XOKA.GD.ZS
+    - DT.DOD.DECT.GN.ZS
+    - DT.ODA.ALLD.CD
+    - EG.ELC.ACCS.ZS
+    - EN.ATM.CO2E.PC
+    - FI.RES.TOTL.CD
+    - GC.BAL.CASH.GD.ZS
+    - GC.REV.XGRT.GD.ZS
+    - GC.TAX.TOTL.GD.ZS
+    - IC.BUS.EASE.XQ
+    - NE.EXP.GNFS.ZS
+    - NE.IMP.GNFS.ZS
+    - NY.GDP.MKTP.KD.ZG
+    - NY.GDP.PCAP.CD
+    - NY.GNP.PCAP.CD
+    - SE.ADT.LITR.ZS
+    - SE.PRM.ENRR
+    - SH.DYN.MORT
+    - SH.H2O.BASW.ZS
+    - SH.MED.PHYS.ZS
+    - SH.STA.MMRT
+    - SI.POV.DDAY
+    - SI.POV.GINI
+    - SL.UEM.TOTL.ZS
+    - SM.POP.NETM
+    - SP.DYN.LE00.IN
+    - SP.DYN.TFRT.IN
+    - SP.POP.GROW
+    - SP.POP.TOTL
+    - SP.URB.TOTL.IN.ZS
+    - TM.VAL.MRCH.CD.WT
+    - TX.VAL.MRCH.CD.WT
+
+malnutrition:
+  description: "Subnational Malnutrition Database"
+  source_id: 5
+  indicators:
+    - SN.SH.STA.MALN.ZS
+    - SN.SH.STA.OWGH.ZS
+    - SN.SH.STA.STNT.ZS
+    - SN.SH.STA.WAST.ZS
+    - SN.SH.SVR.WAST.ZS
+
+energy:
+  description: "Sustainable Energy for All"
+  source_id: 35
+  indicators:
+    - 1.1_ACCESS.ELECTRICITY.TOT
+    - 1.1_TOTAL.FINAL.ENERGY.CONSUM
+    - 1.2_ACCESS.ELECTRICITY.RURAL
+    - 1.3_ACCESS.ELECTRICITY.URBAN
+    - 2.1_ACCESS.CFT.TOT
+    - 2.1_SHARE.TOTAL.RE.IN.TFEC
+    - 3.1_RE.CONSUMPTION
+    - 4.1.1_TOTAL.ELECTRICITY.OUTPUT
+    - 4.1.2_REN.ELECTRICITY.OUTPUT
+    - 4.1_SHARE.RE.IN.ELECTRICITY
+    - 6.1_PRIMARY.ENERGY.INTENSITY
+
+net_savings:
+  description: "Adjusted Net Savings — natural capital, sustainability accounting"
+  source_id: 43
+  indicators:
+    - NY.ADJ.AEDU.GN.ZS
+    - NY.ADJ.DCO2.GN.ZS
+    - NY.ADJ.DFOR.GN.ZS
+    - NY.ADJ.DKAP.GN.ZS
+    - NY.ADJ.DMIN.GN.ZS
+    - NY.ADJ.DNGY.GN.ZS
+    - NY.ADJ.DPEM.GN.ZS
+    - NY.ADJ.DRES.GN.ZS
+    - NY.ADJ.ICTR.GN.ZS
+    - NY.ADJ.NNAT.GN.ZS
+    - NY.ADJ.SVNG.GN.ZS
+    - NY.ADJ.SVNX.GN.ZS
+    - NY.GDP.COAL.RT.ZS
+    - NY.GDP.FRST.RT.ZS
+    - NY.GDP.MINR.RT.ZS
+    - NY.GDP.NGAS.RT.ZS
+    - NY.GDP.PETR.RT.ZS
+    - NY.GDP.TOTL.RT.ZS
+
+doing_business:
+  description: "Doing Business — regulatory environment indicators"
+  source_id: 1
+  indicators:
+    - IC.BUS.EASE.XQ
+    - IC.BUS.EASE.DFRN.XQ.DB1719
+    - IC.REG.DURS.DY
+    - IC.REG.COST.PC.ZS
+    - IC.REG.PROC
+    - IC.TAX.TOTL.CP.ZS
+    - IC.TAX.DURS.HO
+    - IC.TAX.PAYM.NO
+    - IC.FRM.CRED.GEN.ZS
+    - IC.ELC.TIME.DY
+    - IC.ELC.COST.PC.ZS
+    - IC.PRP.PROC.NO
+    - IC.PRP.DURS.DY
+    - IC.IMP.DURS.DY
+    - IC.EXP.DURS.DY
+    - ENF.CONT.DURS.DY
+    - ENF.CONT.COEN.COST.ZS
+    - IC.ISV.DURS.NO
+    - LP.LPI.OVRL.XQ
+    - IC.CRD.INFO.XQ
+
+cpia:
+  description: "Country Policy and Institutional Assessment"
+  source_id: 31
+  indicators:
+    - IQ.CPA.BREG.XQ
+    - IQ.CPA.DEBT.XQ
+    - IQ.CPA.ECON.XQ
+    - IQ.CPA.ENVR.XQ
+    - IQ.CPA.EPOL.XQ
+    - IQ.CPA.FINQ.XQ
+    - IQ.CPA.FISP.XQ
+    - IQ.CPA.GNDR.XQ
+    - IQ.CPA.HRES.XQ
+    - IQ.CPA.IRAI.XQ
+    - IQ.CPA.MACR.XQ
+    - IQ.CPA.PADM.XQ
+    - IQ.CPA.PRES.XQ
+    - IQ.CPA.PROP.XQ
+    - IQ.CPA.PROT.XQ
+    - IQ.CPA.PUBS.XQ
+    - IQ.CPA.REVN.XQ
+    - IQ.CPA.SOCI.XQ
+    - IQ.CPA.STRC.XQ
+    - IQ.CPA.TRAD.XQ
+    - IQ.CPA.TRAN.XQ
+
+logistics:
+  description: "Logistics Performance Index"
+  source_id: 66
+  indicators:
+    - LP.LPI.CUST.XQ
+    - LP.LPI.INFR.XQ
+    - LP.LPI.ITRN.XQ
+    - LP.LPI.LOGS.XQ
+    - LP.LPI.OVRL.XQ
+    - LP.LPI.TIME.XQ
+    - LP.LPI.TRAC.XQ
+
+financial_dev:
+  description: "Global Financial Development"
+  source_id: 32
+  indicators:
+    - GFDD.AI.02
+    - GFDD.AI.06
+    - GFDD.DI.01
+    - GFDD.DI.02
+    - GFDD.DI.03
+    - GFDD.DI.04
+    - GFDD.DI.05
+    - GFDD.DI.06
+    - GFDD.DI.08
+    - GFDD.DI.12
+    - GFDD.DI.14
+    - GFDD.EI.01
+    - GFDD.EI.02
+    - GFDD.EI.08
+    - GFDD.OI.01
+    - GFDD.OI.02
+    - GFDD.OI.06
+    - GFDD.OI.07
+    - GFDD.SI.01
+    - GFDD.SI.02
+    - GFDD.SI.04
+    - GFDD.SI.05
+    - GFDD.SM.01
+    - GFDD.SM.02
+
+stat_performance:
+  description: "Statistical Performance Indicators — data quality by country"
+  source_id: 83
+  indicators:
+    - SPI.DATA.USE
+    - SPI.DTA.SRCE
+    - SPI.INF
+    - SPI.METHODOLOGY
+    - SPI.OVRL
+    - SPI.PERIODICITY
+    - SPI.SRC.CENSUS
+    - SPI.SRC.CREG
+    - SPI.SRC.FSTA
+    - SPI.SRC.HHOLD
+    - SPI.STNDR
+
+id4d:
+  description: "Identification for Development — civil registration and ID coverage"
+  source_id: 89
+  indicators:
+    - SP.REG.BRTH.ZS
+    - SP.REG.BRTH.RU.ZS
+    - SP.REG.BRTH.UR.ZS
+    - SP.REG.DTHS.ZS
+    - ID.OWN.TOTL.ZS
+    - ID.OWN.TOTL.FE.ZS
+    - ID.OWN.TOTL.MA.ZS
+    - ID.OWN.TOTL.OL.ZS
+    - ID.OWN.TOTL.YG.ZS
+    - ID.OWN.TOTL.40.ZS
+    - ID.OWN.TOTL.60.ZS
+
+wealth:
+  description: "Wealth Accounts — natural, produced, human capital"
+  source_id: 59
+  indicators:
+    - NW.NCA.PC
+    - NW.NCA.TO
+    - NW.NCA.SAFS.PC
+    - NW.NCA.SAFS.TO
+    - NW.PCA.PC
+    - NW.PCA.TO
+    - NW.HCA.PC
+    - NW.HCA.TO
+    - NW.TW.PC
+    - NW.TW.TO
+    - NW.NCA.SMIN.TO
+    - NW.NCA.SFEN.TO
+    - NW.NCA.SFOR.TO
+    - NW.NCA.SCRL.TO
+    - NW.NCA.SPAS.TO
+    - NW.NCA.SPAL.TO

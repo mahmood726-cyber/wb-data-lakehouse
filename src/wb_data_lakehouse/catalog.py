@@ -18,6 +18,19 @@ DESCRIPTION_HINTS = {
     "food_nutrition": "Food Prices for Nutrition",
     "sdg_health": "SDG Health and Social Protection",
     "climate": "Climate and Development",
+    "population": "Population Estimates and Projections",
+    "health_equity": "Health Equity and Financial Protection",
+    "africa_dev": "Africa Development Indicators",
+    "malnutrition": "Subnational Malnutrition",
+    "energy": "Sustainable Energy for All",
+    "net_savings": "Adjusted Net Savings",
+    "doing_business": "Doing Business",
+    "cpia": "Country Policy and Institutional Assessment",
+    "logistics": "Logistics Performance Index",
+    "financial_dev": "Global Financial Development",
+    "stat_performance": "Statistical Performance Indicators",
+    "id4d": "Identification for Development",
+    "wealth": "Wealth Accounts",
 }
 
 
