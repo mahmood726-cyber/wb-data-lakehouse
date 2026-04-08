@@ -1,40 +1,41 @@
+## REVIEW CLEAN
 ## Multi-Persona Review: wb-data-lakehouse (core modules)
 ### Date: 2026-04-08
-### Summary: 2 P0, 5 P1, 5 P2
+### Summary: 2 P0, 5 P1, 5 P2 — ALL P0+P1 FIXED (44/44 tests pass)
 
 ---
 
 #### P0 -- Critical
 
-- **P0-1** [Data Engineer]: Aggregate regions and income groups contaminate harmonized data (normalize.py:49)
+- **P0-1** [FIXED] [Data Engineer]: Aggregate regions and income groups contaminate harmonized data (normalize.py:49)
   - WB API returns both countries (PAK, USA) and aggregates (AFE=Africa Eastern, WLD=World, XD=High income) in the same response. 256 rows have empty `countryiso3code` (income groups), and ~50 aggregate region codes (AFE, AFW, ARB, CSS, etc.) are mixed with real iso3c codes.
   - Harmonized output passes these through, contaminating downstream joins — IHME/WHO lakehouses only have real countries.
   - Suggested fix: Filter out rows where `countryiso3code` is empty OR matches known WB aggregate codes (3-letter codes not in ISO 3166-1). Add an `is_aggregate` check in `harmonize_wb()`.
 
-- **P0-2** [Software Engineer]: Silent partial data from pagination errors — no truncation flag (api.py:45-51)
+- **P0-2** [FIXED] [Software Engineer]: Silent partial data from pagination errors — no truncation flag (api.py:45-51)
   - When a later page returns 400, the graceful fallback keeps earlier pages but returns them without any indication of truncation. Callers cannot distinguish complete vs partial datasets.
   - 10 indicators in the initial fetch were affected — they have partial data silently accepted as complete.
   - Suggested fix: Return a tuple `(records, is_complete: bool)` or add a `_truncated` flag to the result dict in `_fetch_one()`.
 
 #### P1 -- Important
 
-- **P1-1** [Domain Expert]: Sub-annual dates silently become NaN (normalize.py:27, 50)
+- **P1-1** [FIXED] [Domain Expert]: Sub-annual dates silently become NaN (normalize.py:27, 50)
   - `pd.to_numeric(date, errors="coerce")` converts "2020Q1" or "2020M06" to NaN without warning. Some WB indicators (FX rates, quarterly debt) use sub-annual dates.
   - Suggested fix: Check for non-numeric dates before coercion and log warnings.
 
-- **P1-2** [Software Engineer]: Catalog search uses regex by default (catalog.py:89-91)
+- **P1-2** [FIXED] [Software Engineer]: Catalog search uses regex by default (catalog.py:89-91)
   - `.str.contains(kw)` interprets special regex chars. Searching for "X.Y" matches "XAY".
   - Suggested fix: Add `regex=False` parameter to `.str.contains()`.
 
-- **P1-3** [Software Engineer]: Redundant type coercion in harmonize_wb (normalize.py:50, 53)
+- **P1-3** [FIXED] [Software Engineer]: Redundant type coercion in harmonize_wb (normalize.py:50, 53)
   - `harmonize_wb()` re-calls `pd.to_numeric()` on date and value even though `coerce_types()` already did this in the promote pipeline. Wasteful and masks errors.
   - Suggested fix: Remove redundant coercion from `harmonize_wb()` — assume input is already coerced.
 
-- **P1-4** [Data Engineer]: Provenance incomplete — no API lastupdated or truncation flag (normalize.py:32-37)
+- **P1-4** [FIXED] [Data Engineer]: Provenance incomplete — no API lastupdated or truncation flag (normalize.py:32-37)
   - Bronze provenance only records indicator code and download timestamp. Missing: API response `lastupdated`, whether fetch was truncated, source URL for reproducibility.
   - Suggested fix: Extend `add_provenance()` or pass metadata from fetch result.
 
-- **P1-5** [Software Engineer]: Session objects never closed (api.py:34, sources/__init__.py:37)
+- **P1-5** [FIXED] [Software Engineer]: Session objects never closed (api.py:34, sources/__init__.py:37)
   - `build_session()` creates sessions that are never explicitly closed, risking connection pool exhaustion in long runs.
   - Suggested fix: Use session as context manager or close after domain fetch completes.
 
