@@ -1,0 +1,118 @@
+# World Bank Data Lakehouse — Indicator Registry
+# Each domain lists curated indicator codes fetched from api.worldbank.org/v2.
+
+wdi:
+  description: "World Development Indicators — flagship dataset"
+  source_id: 2
+  indicators:
+    - SP.DYN.LE00.IN
+    - SH.XPD.CHEX.GD.ZS
+    - SH.XPD.CHEX.PC.CD
+    - NY.GDP.PCAP.CD
+    - NY.GDP.MKTP.CD
+    - SP.POP.TOTL
+    - SP.POP.GROW
+    - SP.DYN.CBRT.IN
+    - SP.DYN.CDRT.IN
+    - SP.URB.TOTL.IN.ZS
+    - EN.ATM.CO2E.PC
+    - EG.ELC.ACCS.ZS
+    - IT.NET.USER.ZS
+    - SL.UEM.TOTL.ZS
+    - FP.CPI.TOTL.ZG
+    - BX.KLT.DINV.WD.GD.ZS
+    - NE.TRD.GNFS.ZS
+    - GC.DOD.TOTL.GD.ZS
+    - SM.POP.NETM
+    - SH.H2O.BASW.ZS
+
+hnp:
+  description: "Health, Nutrition and Population Statistics"
+  source_id: 37
+  indicators:
+    - SH.STA.MMRT
+    - SH.DYN.NMRT
+    - SH.DYN.MORT
+    - SP.DYN.IMRT.IN
+    - SH.MED.PHYS.ZS
+    - SH.MED.BEDS.ZS
+    - SH.MED.NUMW.P3
+    - SH.IMM.MEAS
+    - SH.IMM.IDPT
+    - SH.STA.BRTC.ZS
+    - SH.PRV.SMOK.MA
+    - SH.PRV.SMOK.FE
+    - SH.STA.OWGH.ZS
+    - SH.STA.DIAB.ZS
+    - SH.TBS.INCD
+    - SH.DYN.AIDS.ZS
+    - SH.STA.WASH.P5
+    - SH.XPD.OOPC.CH.ZS
+    - SH.UHC.SRVS.CV.XD
+    - SH.STA.SUIC.P5
+
+poverty:
+  description: "Poverty and Inequality"
+  source_id: 2
+  topic_id: 11
+  indicators:
+    - SI.POV.DDAY
+    - SI.POV.LMIC
+    - SI.POV.UMIC
+    - SI.POV.NAHC
+    - SI.POV.GINI
+    - SI.DST.FRST.10
+    - SI.DST.10TH.10
+    - SI.SPR.PCAP.ZG
+    - SI.POV.GAPS
+    - NY.GNP.PCAP.CD
+
+governance:
+  description: "Worldwide Governance Indicators"
+  source_id: 3
+  indicators:
+    - VA.EST
+    - PS.EST
+    - GE.EST
+    - RQ.EST
+    - RL.EST
+    - CC.EST
+    - VA.PER.RNK
+    - PS.PER.RNK
+    - GE.PER.RNK
+    - CC.PER.RNK
+
+education:
+  description: "Education Statistics"
+  source_id: 2
+  topic_id: 4
+  indicators:
+    - SE.ADT.LITR.ZS
+    - SE.ADT.LITR.FE.ZS
+    - SE.PRM.ENRR
+    - SE.SEC.ENRR
+    - SE.TER.ENRR
+    - SE.XPD.TOTL.GD.ZS
+    - SE.PRM.CMPT.ZS
+    - SE.SEC.CMPT.LO.ZS
+    - SE.PRM.TENR
+    - SE.COM.DURS
+    - UIS.FOSEP.56.F600
+    - SE.ADT.1524.LT.ZS
+
+gender:
+  description: "Gender Statistics"
+  source_id: 14
+  indicators:
+    - SG.GEN.PARL.ZS
+    - SL.TLF.CACT.FE.ZS
+    - SL.TLF.CACT.MA.ZS
+    - SE.ENR.PRIM.FM.ZS
+    - SE.ENR.SECO.FM.ZS
+    - SH.STA.MMRT
+    - SP.ADO.TFRT
+    - SG.VAW.1549.ZS
+    - SG.LAW.NODC.HR
+    - SL.EMP.MPYR.FE.ZS
+    - SP.DYN.LE00.FE.IN
+    - SP.DYN.LE00.MA.IN
