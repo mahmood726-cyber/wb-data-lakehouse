@@ -64,3 +64,20 @@ def test_harmonize_wb_indicator_code_prefix():
     harmonized = harmonize_wb(df)
     for code in harmonized["indicator_code"]:
         assert code.startswith("wb_"), f"Missing wb_ prefix: {code}"
+
+
+def test_harmonize_wb_filters_aggregates():
+    """Aggregate regions (WLD, AFE) and empty iso3 should be excluded."""
+    df = pd.DataFrame({
+        "indicator_id": ["X"] * 4,
+        "indicator_name": ["Test"] * 4,
+        "country_id": ["PK", "1A", "XD", "US"],
+        "country_name": ["Pakistan", "Arab World", "High income", "United States"],
+        "countryiso3code": ["PAK", "ARB", "", "USA"],
+        "date": [2022, 2022, 2022, 2022],
+        "value": [1.0, 2.0, 3.0, 4.0],
+    })
+    harmonized = harmonize_wb(df)
+    # Only PAK and USA should survive — ARB is aggregate, empty is income group
+    assert len(harmonized) == 2
+    assert set(harmonized["iso3c"]) == {"PAK", "USA"}

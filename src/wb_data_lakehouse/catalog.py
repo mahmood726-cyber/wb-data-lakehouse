@@ -86,9 +86,9 @@ def search_catalog(
     if keyword is not None:
         kw = keyword.lower()
         text_match = (
-            catalog["dataset"].str.lower().str.contains(kw, na=False)
-            | catalog["description"].str.lower().str.contains(kw, na=False)
-            | catalog["column_names"].str.lower().str.contains(kw, na=False)
+            catalog["dataset"].str.lower().str.contains(kw, na=False, regex=False)
+            | catalog["description"].str.lower().str.contains(kw, na=False, regex=False)
+            | catalog["column_names"].str.lower().str.contains(kw, na=False, regex=False)
         )
         mask &= text_match
     return catalog.loc[mask].reset_index(drop=True)

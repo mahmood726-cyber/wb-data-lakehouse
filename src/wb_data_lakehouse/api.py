@@ -28,8 +28,12 @@ def fetch_indicator(
     indicator_code: str,
     per_page: int = DEFAULT_PER_PAGE,
     session: requests.Session | None = None,
-) -> list[dict]:
-    """Fetch all country-year observations for one indicator. Handles pagination."""
+) -> tuple[list[dict], bool]:
+    """Fetch all country-year observations for one indicator. Handles pagination.
+
+    Returns (records, is_complete). is_complete is False if pagination was
+    truncated due to errors on later pages.
+    """
     if session is None:
         session = build_session()
 
@@ -37,17 +41,19 @@ def fetch_indicator(
     params = {"format": "json", "per_page": per_page, "page": 1}
 
     all_records: list[dict] = []
+    is_complete = True
     while True:
         try:
             resp = session.get(url, params=params, timeout=DEFAULT_TIMEOUT_SECONDS)
             if resp.status_code >= 400:
-                # If we already have data from earlier pages, keep it
                 if all_records:
+                    is_complete = False
                     break
                 resp.raise_for_status()
             data = resp.json()
         except requests.RequestException:
             if all_records:
+                is_complete = False
                 break
             raise
 
@@ -62,7 +68,7 @@ def fetch_indicator(
             break
         params["page"] += 1
 
-    return all_records
+    return all_records, is_complete
 
 
 def fetch_indicator_metadata(

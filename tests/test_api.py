@@ -27,13 +27,14 @@ def test_build_session():
     assert "User-Agent" in session.headers
 
 
-def test_fetch_indicator_returns_records():
+def test_fetch_indicator_returns_records_and_completeness():
     mock_resp = _mock_response("wb_api_indicator_response.json")
     session = MagicMock()
     session.get.return_value = mock_resp
-    records = fetch_indicator("SP.DYN.LE00.IN", session=session)
+    records, is_complete = fetch_indicator("SP.DYN.LE00.IN", session=session)
     assert len(records) == 5
     assert records[0]["countryiso3code"] == "PAK"
+    assert is_complete is True
 
 
 def test_fetch_indicator_metadata():
