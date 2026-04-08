@@ -1,0 +1,9 @@
+indicator_id,indicator_name,country_id,country_name,countryiso3code,date,value,unit,obs_status,decimal
+SP.DYN.LE00.IN,Life expectancy at birth total (years),PK,Pakistan,PAK,2022,66.094,,,0
+SP.DYN.LE00.IN,Life expectancy at birth total (years),PK,Pakistan,PAK,2021,65.867,,,0
+SP.DYN.LE00.IN,Life expectancy at birth total (years),GB,United Kingdom,GBR,2022,80.693,,,0
+SP.DYN.LE00.IN,Life expectancy at birth total (years),US,United States,USA,2022,77.504,,,0
+SP.POP.TOTL,Population total,PK,Pakistan,PAK,2022,231402117,,,0
+SP.POP.TOTL,Population total,GB,United Kingdom,GBR,2022,67508936,,,0
+SP.POP.TOTL,Population total,US,United States,USA,2022,333287557,,,0
+SP.POP.TOTL,Population total,CN,China,CHN,2022,1412175000,,,0
