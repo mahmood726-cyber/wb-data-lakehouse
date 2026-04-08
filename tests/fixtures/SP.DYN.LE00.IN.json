@@ -1,0 +1,6 @@
+[
+  {"indicator_id": "SP.DYN.LE00.IN", "indicator_name": "Life expectancy at birth, total (years)", "country_id": "PK", "country_name": "Pakistan", "countryiso3code": "PAK", "date": "2022", "value": 66.094, "unit": "", "obs_status": "", "decimal": 0},
+  {"indicator_id": "SP.DYN.LE00.IN", "indicator_name": "Life expectancy at birth, total (years)", "country_id": "PK", "country_name": "Pakistan", "countryiso3code": "PAK", "date": "2021", "value": 65.867, "unit": "", "obs_status": "", "decimal": 0},
+  {"indicator_id": "SP.DYN.LE00.IN", "indicator_name": "Life expectancy at birth, total (years)", "country_id": "GB", "country_name": "United Kingdom", "countryiso3code": "GBR", "date": "2022", "value": 80.693, "unit": "", "obs_status": "", "decimal": 0},
+  {"indicator_id": "SP.DYN.LE00.IN", "indicator_name": "Life expectancy at birth, total (years)", "country_id": "US", "country_name": "United States", "countryiso3code": "USA", "date": "2022", "value": 77.504, "unit": "", "obs_status": "", "decimal": 0}
+]

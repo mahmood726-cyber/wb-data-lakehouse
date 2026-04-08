@@ -1,0 +1,5 @@
+[
+  {"indicator_id": "SP.POP.TOTL", "indicator_name": "Population, total", "country_id": "PK", "country_name": "Pakistan", "countryiso3code": "PAK", "date": "2022", "value": 231402117, "unit": "", "obs_status": "", "decimal": 0},
+  {"indicator_id": "SP.POP.TOTL", "indicator_name": "Population, total", "country_id": "GB", "country_name": "United Kingdom", "countryiso3code": "GBR", "date": "2022", "value": 67508936, "unit": "", "obs_status": "", "decimal": 0},
+  {"indicator_id": "SP.POP.TOTL", "indicator_name": "Population, total", "country_id": "US", "country_name": "United States", "countryiso3code": "USA", "date": "2022", "value": 333287557, "unit": "", "obs_status": "", "decimal": 0}
+]
