@@ -1,9 +1,19 @@
+# Data files (large, not for git)
+data/
+manifests/
+
+# Python
 __pycache__/
 *.pyc
 *.egg-info/
 .pytest_cache/
+.eggs/
 dist/
 build/
-data/
-manifests/
-*.parquet
+
+# IDE
+.vscode/
+.idea/
+
+# Claude config
+.claude/
