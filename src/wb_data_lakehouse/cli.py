@@ -30,6 +30,12 @@ def command_promote(args) -> dict:
     from wb_data_lakehouse.promote.governance import promote_governance
     from wb_data_lakehouse.promote.education import promote_education
     from wb_data_lakehouse.promote.gender import promote_gender
+    from wb_data_lakehouse.promote.hci import promote_hci
+    from wb_data_lakehouse.promote.uhc import promote_uhc
+    from wb_data_lakehouse.promote.esg import promote_esg
+    from wb_data_lakehouse.promote.food_nutrition import promote_food_nutrition
+    from wb_data_lakehouse.promote.sdg_health import promote_sdg_health
+    from wb_data_lakehouse.promote.climate import promote_climate
 
     promoters = {
         "wdi": promote_wdi,
@@ -38,6 +44,12 @@ def command_promote(args) -> dict:
         "governance": promote_governance,
         "education": promote_education,
         "gender": promote_gender,
+        "hci": promote_hci,
+        "uhc": promote_uhc,
+        "esg": promote_esg,
+        "food_nutrition": promote_food_nutrition,
+        "sdg_health": promote_sdg_health,
+        "climate": promote_climate,
     }
 
     if args.all:

@@ -12,6 +12,12 @@ DESCRIPTION_HINTS = {
     "governance": "Worldwide Governance Indicators",
     "education": "Education Statistics",
     "gender": "Gender Statistics",
+    "hci": "Human Capital Index",
+    "uhc": "Universal Health Coverage",
+    "esg": "Environment, Social and Governance",
+    "food_nutrition": "Food Prices for Nutrition",
+    "sdg_health": "SDG Health and Social Protection",
+    "climate": "Climate and Development",
 }
 
 

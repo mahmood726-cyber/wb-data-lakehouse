@@ -22,6 +22,12 @@ DOMAINS = (
     "governance",
     "education",
     "gender",
+    "hci",
+    "uhc",
+    "esg",
+    "food_nutrition",
+    "sdg_health",
+    "climate",
 )
 
 

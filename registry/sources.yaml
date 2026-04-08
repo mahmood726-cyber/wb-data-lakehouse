@@ -116,3 +116,244 @@ gender:
     - SL.EMP.MPYR.FE.ZS
     - SP.DYN.LE00.FE.IN
     - SP.DYN.LE00.MA.IN
+
+hci:
+  description: "Human Capital Index — survival, schooling, health (all 27 indicators)"
+  source_id: 63
+  indicators:
+    - HD.HCI.OVRL              # Human Capital Index (scale 0-1)
+    - HD.HCI.OVRL.FE           # HCI, Female
+    - HD.HCI.OVRL.MA           # HCI, Male
+    - HD.HCI.OVRL.LB           # HCI, Lower Bound
+    - HD.HCI.OVRL.UB           # HCI, Upper Bound
+    - HD.HCI.OVRL.LB.FE        # HCI, Female, Lower Bound
+    - HD.HCI.OVRL.LB.MA        # HCI, Male, Lower Bound
+    - HD.HCI.OVRL.UB.FE        # HCI, Female, Upper Bound
+    - HD.HCI.OVRL.UB.MA        # HCI, Male, Upper Bound
+    - HD.HCI.MORT              # Probability of Survival to Age 5
+    - HD.HCI.MORT.FE           # Survival to Age 5, Female
+    - HD.HCI.MORT.MA           # Survival to Age 5, Male
+    - HD.HCI.AMRT              # Survival Rate from Age 15-60
+    - HD.HCI.AMRT.FE           # Survival 15-60, Female
+    - HD.HCI.AMRT.MA           # Survival 15-60, Male
+    - HD.HCI.EYRS              # Expected Years of School
+    - HD.HCI.EYRS.FE           # Expected Years, Female
+    - HD.HCI.EYRS.MA           # Expected Years, Male
+    - HD.HCI.HLOS              # Harmonized Test Scores
+    - HD.HCI.HLOS.FE           # Test Scores, Female
+    - HD.HCI.HLOS.MA           # Test Scores, Male
+    - HD.HCI.LAYS              # Learning-Adjusted Years of School
+    - HD.HCI.LAYS.FE           # LAYS, Female
+    - HD.HCI.LAYS.MA           # LAYS, Male
+    - HD.HCI.STNT              # Fraction of Children Under 5 Not Stunted
+    - HD.HCI.STNT.FE           # Not Stunted, Female
+    - HD.HCI.STNT.MA           # Not Stunted, Male
+
+uhc:
+  description: "Universal Health Coverage — catastrophic spending and impoverishment"
+  source_id: 58
+  indicators:
+    - SH.UHC.SRVS.CV.XD       # UHC service coverage index
+    - SH.UHC.OOPC.10.ZS       # % spending >10% on health OOP
+    - SH.UHC.OOPC.10.TO       # Number spending >10% on health OOP
+    - SH.UHC.OOPC.25.ZS       # % spending >25% on health OOP
+    - SH.UHC.OOPC.25.TO       # Number spending >25% on health OOP
+    - SH.UHC.NOP1.ZS          # % pushed below $2.15 by OOP health
+    - SH.UHC.NOP1.TO          # Number pushed below $2.15
+    - SH.UHC.NOP1.ZG          # Increase in poverty gap $1.90 due to OOP
+    - SH.UHC.NOP1.CG          # Increase in poverty gap $1.90 (absolute)
+    - SH.UHC.NOP2.ZS          # % pushed below $3.65 by OOP health
+    - SH.UHC.NOP2.TO          # Number pushed below $3.65
+    - SH.UHC.NOP2.ZG          # Increase in poverty gap $3.20 due to OOP
+    - SH.UHC.NOP2.CG          # Increase in poverty gap $3.20 (absolute)
+
+esg:
+  description: "Environment, Social and Governance Data (all 71 indicators)"
+  source_id: 75
+  indicators:
+    - AG.LND.AGRI.ZS           # Agricultural land (% of land area)
+    - AG.LND.FRLS.HA           # Tree Cover Loss (hectares)
+    - AG.LND.FRST.ZS           # Forest area (% of land area)
+    - AG.PRD.FOOD.XD           # Food production index
+    - CC.EST                   # Control of Corruption
+    - EG.CFT.ACCS.ZS           # Access to clean fuels for cooking (%)
+    - EG.EGY.PRIM.PP.KD        # Energy intensity (MJ/$2021 PPP GDP)
+    - EG.ELC.ACCS.ZS           # Access to electricity (%)
+    - EG.ELC.COAL.ZS           # Electricity from coal (%)
+    - EG.ELC.RNEW.ZS           # Renewable electricity output (%)
+    - EG.FEC.RNEW.ZS           # Renewable energy consumption (%)
+    - EG.IMP.CONS.ZS           # Energy imports, net (%)
+    - EG.USE.COMM.FO.ZS        # Fossil fuel energy consumption (%)
+    - EG.USE.PCAP.KG.OE        # Energy use per capita (kg oil equiv)
+    - EN.ATM.CO2E.PC           # CO2 emissions per capita
+    - EN.ATM.METH.PC           # Methane emissions per capita
+    - EN.ATM.NOXE.PC           # Nitrous oxide emissions per capita
+    - EN.ATM.PM25.MC.M3        # PM2.5 mean annual exposure
+    - EN.CLC.CDDY.XD           # Cooling Degree Days
+    - EN.CLC.CSTP.ZS           # Coastal protection
+    - EN.CLC.GHGR.MT.CE        # GHG net emissions/removals by LUCF
+    - EN.CLC.HDDY.XD           # Heating Degree Days
+    - EN.CLC.HEAT.XD           # Heat Index 35
+    - EN.CLC.SPEI.XD           # Standardised Precipitation-Evapotranspiration Index
+    - EN.H2O.BDYS.ZS           # Bodies of water with good quality (%)
+    - EN.LND.LTMP.DC           # Land Surface Temperature
+    - EN.MAM.THRD.NO           # Mammal species, threatened
+    - EN.POP.DNST              # Population density
+    - ER.H2O.FWST.ZS           # Water stress level (%)
+    - ER.H2O.FWTL.ZS           # Freshwater withdrawals (% internal)
+    - ER.PTD.TOTL.ZS           # Protected areas (% territory)
+    - GB.XPD.RSDV.GD.ZS        # R&D expenditure (% GDP)
+    - GE.EST                   # Government Effectiveness
+    - IC.LGL.CRED.XQ           # Legal rights strength (0-12)
+    - IP.JRN.ARTC.SC           # Scientific journal articles
+    - IP.PAT.RESD              # Patent applications, residents
+    - IT.NET.USER.ZS           # Internet users (%)
+    - NV.AGR.TOTL.ZS           # Agriculture value added (% GDP)
+    - NY.ADJ.DFOR.GN.ZS        # Adjusted savings: forest depletion (% GNI)
+    - NY.ADJ.DRES.GN.ZS        # Adjusted savings: resource depletion (% GNI)
+    - NY.GDP.MKTP.KD.ZG        # GDP growth (annual %)
+    - PV.EST                   # Political Stability
+    - RL.EST                   # Rule of Law
+    - RQ.EST                   # Regulatory Quality
+    - SD.ESR.PERF.XQ           # Economic and Social Rights Performance
+    - SE.ADT.LITR.ZS           # Adult literacy rate (%)
+    - SE.ENR.PRSC.FM.ZS        # School enrollment gender parity
+    - SE.PRM.ENRR              # Primary enrollment (% gross)
+    - SE.XPD.TOTL.GB.ZS        # Education expenditure (% govt)
+    - SG.GEN.PARL.ZS           # Women in parliament (%)
+    - SH.DTH.COMM.ZS           # Deaths by communicable diseases (%)
+    - SH.DYN.MORT              # Under-5 mortality
+    - SH.H2O.SMDW.ZS           # Safely managed drinking water (%)
+    - SH.MED.BEDS.ZS           # Hospital beds per 1,000
+    - SH.STA.OWAD.ZS           # Overweight prevalence (% adults)
+    - SH.STA.SMSS.ZS           # Safely managed sanitation (%)
+    - SI.DST.FRST.20           # Income share lowest 20%
+    - SI.POV.GINI              # Gini index
+    - SI.POV.NAHC              # Poverty headcount (national)
+    - SI.SPR.PCAP.ZG           # Survey mean income growth
+    - SL.TLF.0714.ZS           # Child labor (% children 7-14)
+    - SL.TLF.ACTI.ZS           # Labor force participation (%)
+    - SL.TLF.CACT.FM.ZS        # Female/male labor force ratio
+    - SL.UEM.TOTL.ZS           # Unemployment (%)
+    - SM.POP.NETM              # Net migration
+    - SN.ITK.DEFC.ZS           # Undernourishment prevalence (%)
+    - SP.DYN.LE00.IN           # Life expectancy
+    - SP.DYN.TFRT.IN           # Fertility rate
+    - SP.POP.65UP.TO.ZS        # Population 65+ (%)
+    - SP.UWT.TFRT              # Unmet need for contraception (%)
+    - VA.EST                   # Voice and Accountability
+
+food_nutrition:
+  description: "Food Prices for Nutrition — diet cost and affordability (all 45)"
+  source_id: 88
+  indicators:
+    - CoCA_fexp                # Energy sufficient diet: cost/food expenditure
+    - CoCA_headcount           # % cannot afford sufficient calories
+    - CoCA_LCU                 # Cost energy sufficient diet (LCU)
+    - CoCA_pov                 # Energy sufficient diet: cost/poverty line
+    - CoCA_PPP                 # Cost energy sufficient diet (PPP$)
+    - CoCA_unafford_n          # Millions cannot afford calories
+    - CoHD_asf_LCU             # Cost animal source foods (LCU)
+    - CoHD_asf_PPP             # Cost animal source foods (PPP$)
+    - CoHD_asf_prop            # Cost share animal-sourced foods
+    - CoHD_asf_ss              # Animal foods vs starchy staples cost
+    - CoHD_CoCA                # Healthy diet cost / energy sufficient cost
+    - CoHD_f_LCU               # Cost fruits (LCU)
+    - CoHD_f_PPP               # Cost fruits (PPP$)
+    - CoHD_f_prop              # Cost share fruits
+    - CoHD_f_ss                # Fruits vs starchy staples cost
+    - CoHD_fexp                # Healthy diet: cost/food expenditure
+    - CoHD_headcount           # % cannot afford healthy diet
+    - CoHD_LCU                 # Cost healthy diet (LCU)
+    - CoHD_lns_LCU             # Cost legumes/nuts/seeds (LCU)
+    - CoHD_lns_PPP             # Cost legumes/nuts/seeds (PPP$)
+    - CoHD_lns_prop            # Cost share legumes/nuts/seeds
+    - CoHD_lns_ss              # Legumes/nuts vs staples cost
+    - CoHD_of_LCU              # Cost fats/oils (LCU)
+    - CoHD_of_PPP              # Cost fats/oils (PPP$)
+    - CoHD_of_prop             # Cost share oils/fats
+    - CoHD_of_ss               # Oils/fats vs staples cost
+    - CoHD_pov                 # Healthy diet: cost/poverty line
+    - CoHD_PPP                 # Cost healthy diet (PPP$)
+    - CoHD_ss_LCU              # Cost starchy staples (LCU)
+    - CoHD_ss_PPP              # Cost starchy staples (PPP$)
+    - CoHD_ss_prop             # Cost share starchy staples
+    - CoHD_unafford_n          # Millions cannot afford healthy diet
+    - CoHD_v_LCU               # Cost vegetables (LCU)
+    - CoHD_v_PPP               # Cost vegetables (PPP$)
+    - CoHD_v_prop              # Cost share vegetables
+    - CoHD_v_ss                # Vegetables vs staples cost
+    - CoNA_fexp                # Nutrient adequate diet: cost/food expenditure
+    - CoNA_headcount           # % cannot afford nutrient adequacy
+    - CoNA_LCU                 # Cost nutrient adequate diet (LCU)
+    - CoNA_pov                 # Nutrient adequate diet: cost/poverty line
+    - CoNA_PPP                 # Cost nutrient adequate diet (PPP$)
+    - CoNA_unafford_n          # Millions cannot afford nutrient adequacy
+    - NY.GDP.PCAP.PP.CD        # GDP per capita PPP
+    - NY.GNP.PCAP.PP.CD        # GNI per capita PPP
+    - Pop                      # Population
+
+sdg_health:
+  description: "SDG health, water, sanitation and social protection indicators"
+  source_id: 46
+  indicators:
+    - SH.STA.MMRT              # Maternal mortality ratio
+    - SH.DYN.NMRT              # Neonatal mortality rate
+    - SH.DYN.MORT              # Under-5 mortality rate
+    - SH.HIV.INCD.TL.P3        # New HIV infections per 1,000
+    - SH.TBS.INCD              # TB incidence per 100,000
+    - SH.MLR.INCD.P3           # Malaria incidence per 1,000
+    - SH.STA.SUIC.P5           # Suicide mortality rate
+    - SH.ALC.PCAP.LI           # Alcohol consumption per capita
+    - SH.PRV.SMOK              # Tobacco use prevalence (%)
+    - SH.IMM.MEAS              # Measles immunization (%)
+    - SH.IMM.HEPB              # HepB3 immunization (%)
+    - SH.MED.PHYS.ZS           # Physicians per 1,000
+    - SH.XPD.CHEX.GD.ZS        # Health expenditure (% GDP)
+    - SH.H2O.SMDW.ZS           # Safely managed drinking water (%)
+    - SH.H2O.BASW.ZS           # Basic drinking water (%)
+    - SH.STA.SMSS.ZS           # Safely managed sanitation (%)
+    - SH.STA.BASS.ZS           # Basic sanitation (%)
+    - SH.STA.HYGN.ZS           # Basic handwashing facility (%)
+    - EN.ATM.PM25.MC.M3        # PM2.5 exposure (ug/m3)
+    - EN.ATM.PM25.MC.ZS        # PM2.5 > WHO guideline (% pop)
+    - SN.ITK.DEFC.ZS           # Undernourishment (%)
+    - SH.STA.STNT.ZS           # Stunting prevalence under-5 (%)
+    - SH.STA.WAST.ZS           # Wasting prevalence under-5 (%)
+    - SH.ANM.ALLW.ZS           # Anemia in women 15-49 (%)
+    - SP.DYN.ADKL.IN           # Adolescent fertility rate
+    - SP.DYN.CONU.ZS           # Contraceptive prevalence (%)
+    - SH.SGR.CRSK.ZS           # Catastrophic health spending (%)
+    - per_sa_allsa.cov_pop_tot # Social safety net coverage (%)
+    - per_si_allsi.cov_pop_tot # Social insurance coverage (%)
+    - SG.GEN.PARL.ZS           # Women in parliament (%)
+
+climate:
+  description: "Climate and Development — emissions, exposure, adaptation"
+  source_id: 87
+  indicators:
+    - CC.CO2.EMSE.EL           # CO2 total excluding LUCF (Mt)
+    - CC.CO2.EMSE.IL           # CO2 total including LUCF (Mt)
+    - CC.CO2.EMSE.EN           # CO2 from energy (Mt)
+    - CC.CO2.EMSE.TR           # CO2 from transportation (Mt)
+    - CC.CO2.EMSE.BL           # CO2 from buildings (Mt)
+    - CC.CO2.EMSE.IP           # CO2 from industrial processes (Mt)
+    - CC.CO2.EMSE.LU           # CO2 from land-use change (Mt)
+    - CC.CO2.EMSE.EH           # CO2 from electricity/heat (Mt)
+    - CC.ADPO.MAEX.AA          # Additional pop exposed to coastal floods (max, RCP4.5 2050)
+    - CC.ADPO.MAEX.BB          # Additional pop exposed to coastal floods (max, RCP8.5 2050)
+    - CC.ADPO.MIEX.AA          # Additional pop exposed to coastal floods (min, RCP4.5 2050)
+    - CC.ADPO.MIEX.BB          # Additional pop exposed to coastal floods (min, RCP8.5 2050)
+    - CC.AVPB.PTPI.DI          # Additional people below $1.90 by disasters (%)
+    - CC.AVPB.TPOP.DI          # Additional people below $4 by disasters (%)
+    - CC.CHIC.BTFP.DI          # Income change bottom 40% by disasters (%)
+    - EN.ATM.PM25.MC.M3        # PM2.5 mean annual exposure
+    - AG.LND.FRST.ZS           # Forest area (%)
+    - EG.ELC.RNEW.ZS           # Renewable electricity (%)
+    - EG.FEC.RNEW.ZS           # Renewable energy consumption (%)
+    - EN.ATM.CO2E.PC           # CO2 per capita
+    - ER.H2O.FWST.ZS           # Water stress (%)
+    - CC.ACLD.PRTS.NO          # Total protests and riots since 2018
+    - EN.CLC.HEAT.XD           # Heat Index 35
+    - EN.CLC.SPEI.XD           # Drought index (SPEI)
+    - EN.LND.LTMP.DC           # Land surface temperature
