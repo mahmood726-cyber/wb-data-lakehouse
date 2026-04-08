@@ -38,9 +38,18 @@ def fetch_indicator(
 
     all_records: list[dict] = []
     while True:
-        resp = session.get(url, params=params, timeout=DEFAULT_TIMEOUT_SECONDS)
-        resp.raise_for_status()
-        data = resp.json()
+        try:
+            resp = session.get(url, params=params, timeout=DEFAULT_TIMEOUT_SECONDS)
+            if resp.status_code >= 400:
+                # If we already have data from earlier pages, keep it
+                if all_records:
+                    break
+                resp.raise_for_status()
+            data = resp.json()
+        except requests.RequestException:
+            if all_records:
+                break
+            raise
 
         if not isinstance(data, list) or len(data) < 2 or data[1] is None:
             break
